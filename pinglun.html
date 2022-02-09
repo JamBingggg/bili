@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pinglun.css">
+</head>
+
+<body>
+    <!-- 评论区 -->
+    <div class="bili-wrapper">
+        <!-- 左侧 -->
+        <div class="l-wrapper">
+            <!-- 活动 -->
+            <div class="activity">
+                <div class="inside">
+                    <div class="left">
+                        <div class="l-inside">
+                            <div class="hinter-msg">
+                                <b>《明日方舟》先锋试炼视频征集计划！</b>
+                            </div>
+                            <div class="btn-praise">点击投票</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="inside-bg" style="background-image: url(img/activity.jpg)"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 标签 -->
+            <div class="s-tag">
+                <ul class="tag-area">
+                    <li class="tag" onmousemove="tagomo(this)" onmouseout="tagou(this)">
+                        <a href="#">特摄</a>
+                        <div class="tag-info-pane" style="visibility: hidden" onmouseout="tou(this)">
+                            <div class="tag-header">
+                                <div class="tag-title"><a href="#">特摄</a></div>
+                                <div class="tag-sub">+ 关注</div>
+                            </div>
+                            <div class="tag-right">
+                                <a class="btn-crown" href="#"><i style="background-position: -730px -2200px;"></i>顶</a>
+                                <a class="btn-tread" href="#"><i style="background-position: -730px -2267px;"></i>踩</a>
+                            </div>
+                            <div class="text"></div>
+                            <div class="tag-footer">
+                                <div class="btn-left-box">
+                                    <a class="btn-close">删除</a>
+                                    <a class="btn-report">举报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag" onmousemove="tagomo(this)" onmouseout="tagou(this)">
+                        <a href="#">手机游戏</a>
+                        <div class="tag-info-pane" style="visibility: hidden" onmouseout="tou(this)">
+                            <div class="tag-header">
+                                <div class="tag-title"><a href="#">手机游戏</a></div>
+                                <div class="tag-sub">+ 关注</div>
+                            </div>
+                            <div class="tag-right">
+                                <a class="btn-crown" href="#"><i style="background-position: -730px -2200px;"></i>顶</a>
+                                <a class="btn-tread" href="#"><i style="background-position: -730px -2267px;"></i>踩</a>
+                            </div>
+                            <div class="text"></div>
+                            <div class="tag-footer">
+                                <div class="btn-left-box">
+                                    <a class="btn-close">删除</a>
+                                    <a class="btn-report">举报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag" onmousemove="tagomo(this)" onmouseout="tagou(this)">
+                        <a href="#">实况攻略</a>
+                        <div class="tag-info-pane" style="visibility: hidden" onmouseout="tou(this)">
+                            <div class="tag-header">
+                                <div class="tag-title"><a href="#">实况攻略</a></div>
+                                <div class="tag-sub">+ 关注</div>
+                            </div>
+                            <div class="tag-right">
+                                <a class="btn-crown" href="#"><i style="background-position: -730px -2200px;"></i>顶</a>
+                                <a class="btn-tread" href="#"><i style="background-position: -730px -2267px;"></i>踩</a>
+                            </div>
+                            <div class="text"></div>
+                            <div class="tag-footer">
+                                <div class="btn-left-box">
+                                    <a class="btn-close">删除</a>
+                                    <a class="btn-report">举报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag" onmousemove="tagomo(this)" onmouseout="tagou(this)">
+                        <a href="#">明日方舟</a>
+                        <div class="tag-info-pane" style="visibility: hidden" onmouseout="tou(this)">
+                            <div class="tag-header">
+                                <div class="tag-title"><a href="#">明日方舟</a></div>
+                                <div class="tag-sub">+ 关注</div>
+                            </div>
+                            <div class="tag-right">
+                                <a class="btn-crown" href="#"><i style="background-position: -730px -2200px;"></i>顶</a>
+                                <a class="btn-tread" href="#"><i style="background-position: -730px -2267px;"></i>踩</a>
+                            </div>
+                            <div class="text"></div>
+                            <div class="tag-footer">
+                                <div class="btn-left-box">
+                                    <a class="btn-close">删除</a>
+                                    <a class="btn-report">举报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tag" onmousemove="tagomo(this)" onmouseout="tagou(this)">
+                        <a href="#">抽卡</a>
+                        <div class="tag-info-pane" style="visibility: hidden" onmouseout="tou(this)">
+                            <div class="tag-header">
+                                <div class="tag-title"><a href="#">抽卡</a></div>
+                                <div class="tag-sub">+ 关注</div>
+                            </div>
+                            <div class="tag-right">
+                                <a class="btn-crown" href="#"><i style="background-position: -730px -2200px;"></i>顶</a>
+                                <a class="btn-tread" href="#"><i style="background-position: -730px -2267px;"></i>踩</a>
+                            </div>
+                            <div class="text"></div>
+                            <div class="tag-footer">
+                                <div class="btn-left-box">
+                                    <a class="btn-close">删除</a>
+                                    <a class="btn-report">举报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <a href="#" class="btn-add">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </a>
+                </ul>
+                <div class="btn-view-tag">
+                    <a href="#" style="color: #6d757a;">查看标签修改记录</a>
+                    <span style="margin: 0 10px;">|</span>
+                    <a href="#" style="color: #6d757a;">查看标签使用说明</a>
+                </div>
+            </div>
+            <!-- 禁止转载 -->
+            <div class="zhuanzai">
+                <div class="reprint"><i></i>未经作者授权 禁止转载</div>
+                <div class="open">-</div>
+            </div>
+            <!-- 评论 -->
+            <div class="comment-m" style="padding: 30px 0;">
+                <div class="commen">
+                    <div class="b-head">
+                        <span class="b-head-t results">536</span>
+                        <span class="b-head-t">评论</span>
+                    </div>
+                </div>
+                <div class="comment" style="position: relative;">
+                    <div class="bb-comment">
+                        <div class="reply-notice" style="margin-bottom: 10px;"></div>
+                        <!-- 头部 -->
+                        <div class="comment-header">
+                            <div class="tabs-order">
+                                <ul class="clearfix">
+                                    <li data-sort="2" class="hot-sort on">按热度排序<span class="rad"></span></li>
+                                    <li data-sort="0" class="new-sort" style="display: list-item;">按时间排序</li>
+                                </ul>
+                            </div>
+                            <div class="header-page">
+                                <span class="result">共10页</span>
+                                <span class="disabled" style="display: none;">上一页</span>
+                                <span class="current">1</span>
+                                <a href="#" class="tcd-number">2</a>
+                                <a href="#" class="tcd-number">3</a>
+                                <a href="#" class="tcd-number">4</a>
+                                <span class="dian">...</span>
+                                <a href="#" class="tcd-number">10</a>
+                                <a href="#" class="next">下一页</a></div>
+                        </div>
+                        <!-- 上发表 -->
+                        <div class="comment-send">
+                            <div class="user-face">
+                                <img class="user-head" src="/img/userhead.jpg">
+                            </div>
+                            <div class="textarea-container">
+                                <i class="ipt-arrow"></i>
+                                <textarea cols="80" name="msg" rows="5" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。"
+                                    class="ipt-txt"></textarea>
+                                <button type="submit" class="comment-submit">发表评论</button>
+                            </div>
+                            <div class="comment-emoji">
+                                <i class="face"></i>
+                                <span class="text">表情</span>
+                            </div>
+                        </div>
+                        <!-- 评论区 -->
+                        <div class="comment-list">
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="user-face">
+                                    <img class="user-head" src="/img/userhead.jpg">
+                                </div>
+                                <div class="con ">
+                                    <div class="user">
+                                        xxxx<i class="level l5"></i>
+                                    </div>
+                                    <p class="text">XXXXXXXX</p>
+                                    <div class="info">
+                                        <span class="plad">来自安卓客户端</span>
+                                        <span class="time">2019-08-25 19:43</span>
+                                        <span class="like ">
+                                            <i></i>
+                                            <span></span>
+                                        </span>
+                                        <span class="hate">
+                                            <i></i>
+                                        </span>
+                                        <span class="reply btn-hover">回复</span>
+                                        <div class="operation">
+                                            <div class="spot"></div>
+                                            <div class="opera-list">
+                                                <ul>
+                                                    <li class="blacklist">加入黑名单</li>
+                                                    <li class="report">举报</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply-box"></div>
+                                    <div class="paging-box"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bottom-page">
+                            <span class="disabled" style="display: none;">上一页</span>
+                            <span class="current">1</span>
+                            <a href="#" class="tcd-number">2</a>
+                            <a href="#" class="tcd-number">3</a>
+                            <a href="#" class="tcd-number">4</a>
+                            <span class="dian">...</span>
+                            <a href="#" class="tcd-number">10</a>
+                            <a href="#" class="next">下一页</a>
+                            <div class="page-jump">
+                                共<span>10</span>页，跳至<input type="text">页
+                            </div>
+                        </div>
+                        <!-- 下发表 -->
+                        <div class="comment-send">
+                            <div class="user-face">
+                                <img class="user-head" src="/img/userhead.jpg">
+                            </div>
+                            <div class="textarea-container">
+                                <i class="ipt-arrow"></i>
+                                <textarea cols="80" name="msg" rows="5" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。"
+                                    class="ipt-txt"></textarea>
+                                <button type="submit" class="comment-submit">发表评论</button>
+                            </div>
+                            <div class="comment-emoji">
+                                <i class="face"></i>
+                                <span class="text">表情</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧 -->
+        <div class="r-wrapper">
+            <div class="elecrank-wrapper">
+                <div class="elecrank-header">
+                    <a href="#" target="_blank" class="name">
+                        XXX
+                        <div class="elecrank-icon icon-battery"></div>
+                        <div class="elecrank-icon icon-charge"></div>
+                    </a>
+                    <div class="title">
+                        <span>历史充电人数：</span>
+                        <span>24</span>
+                        <span>人</span>
+                    </div>
+                    <div class="rank-tab active">
+                        <span>本作品充电(</span>
+                        <span>0</span>
+                        <span>人)</span>
+                        <i class="arr-up"></i>
+                    </div>
+                    <div class="rank-tab">
+                        <span>本月所有充电(</span>
+                        <span>2</span>
+                        <span>人)</span>
+                        <i class="arr-up"></i>
+                    </div>
+                </div>
+                <div class="elecrank-content no-list">
+                    <div style="display: block;">
+                        <a class="no-list-icon"></a>
+                        <a class="desc">
+                            <span>本月还木有人为这个作品充电</span>
+                            <span>让我来成为第一个充电侠吧</span>
+                        </a>
+                        <a class="elec-btn">充电</a>
+                    </div>
+                    <ul style="display: none;">
+                        <li class="rank-item first">
+                            <div class="clearfix">
+                                <span class="item-num">1</span>
+                                <img src="/img/userhead.jpg" alt="" class="item-avatar">
+                                <a href="#" class="item-name">YYY</a>
+                            </div>
+                            <i class="compare-icon"></i>
+                        </li>
+                        <li class="rank-item second">
+                            <div class="clearfix">
+                                <span class="item-num">2</span>
+                                <img src="/img/userhead.jpg" alt="" class="item-avatar">
+                                <a href="#" class="item-name">ZZZ</a>
+                            </div>
+                            <i class="compare-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pop-live" style="padding-left: 10px;">
+                <div class="pl-head">大家围观的直播</div>
+                <div class="pl-card">
+                    <a href="#" title="【快乐人类一败涂地】">
+                        <div class="pl-mask">
+                            <div class="pl-live">
+                                <i class="pl-icon-live"></i>
+                                <span class="pl-live-text">LIVE</span>
+                            </div>
+                        </div>
+                        <div class="lazy-img">
+                            <img alt="" src="img/pop.jpg">
+                        </div>
+                        <div class="pl-info">
+                            <div class="lazy-img pl-face">
+                                <img alt="" src="img/userhead.jpg">
+                            </div>
+                            <div>
+                                <p class="pl-title">【快乐人类一败涂地】</p>
+                                <p class="pl-user">
+                                    <span class="pl-user-block pl-name">
+                                        <i class="pl-icon pl-icon-user"></i>
+                                        <span>飙黑车的司机</span>
+                                    </span>
+                                    <span class="pl-user-block pl-online">
+                                        <i class="pl-icon pl-icon-online"></i>
+                                        <span>20838</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/pinglun.js"></script>
+</body>
+
+</html>

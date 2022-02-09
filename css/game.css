@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 12px/1.5 'Microsoft Yahei';
+    color: #161616;
+    background-color: #FAFAFA;
+}
+.header{
+    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+    position: relative;
+    z-index: 10000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu{
+    position: relative;
+    z-index: 200;
+    height: 42px;
+    color: #222;
+}
+.nav-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+.nav{
+    margin: 0 auto;
+    width: 1160px;
+    min-width: 980px;
+    justify-content: space-between;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+    float: left;
+}
+.nav-li{
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    height: 42px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    white-space: nowrap;
+    margin-left: -10px;
+    padding-left: 12px;
+}
+.nav-li>a{
+    padding-left: 20px;
+    white-space: nowrap;
+    color: #222;
+    height: 100%;
+    display: block;
+    padding: 0 7px;
+}
+.header-icon-bilibili-tv{
+    position: absolute;
+    left: 9px;
+    top: -1px;
+    color: #00a1d6;
+    font-size: 20px;
+}
+

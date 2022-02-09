@@ -1,0 +1,120 @@
+/* 尾部 */
+.footer-box {
+    width: 900px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font: 12px/20px "Microsoft Yahei", sans-serif;
+    overflow: hidden;
+    box-sizing: content-box;
+    text-align: left;
+}
+/* 左侧logo */
+.footer-box img, .footer-box .footer-text a, .footer-box .footer-text p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.logos{
+    float: left;
+    margin-top: 12px;
+}
+.logo1{
+    float: left;
+    border-right: 1px solid #0089bc;
+    width: 111px;
+    height: 50px;
+    background: url(../img/bilibili-logo.png) left center / contain no-repeat;
+    padding-right: 20px;
+    box-sizing: content-box;
+}
+.logo2{
+    width: 60px;
+    height: 60px;
+    background: url(../img/culture-logo.png) right center / contain no-repeat;
+    margin-left: 152px;
+    margin-top: -4px;
+}
+/* 右侧文字 */
+.footer-text{
+    float: right;
+}
+.footer-text>p{
+    color: #7d7d7d;
+}
+.footer-text>p>a{
+    font: inherit;
+    text-decoration: none;
+    color: #0089bc;
+}
+
+/* 右侧绝对定位列 */
+.fixed-list{
+    position: fixed;
+    right: 0;
+    height: 205px;
+    bottom: 20%;
+    text-align: center;
+    font-size: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 20px rgba(0, 85, 255, 0.1);
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px 0;
+    z-index: 500;
+}
+.fixed-list>a{
+    height: 50px;
+    display: block;
+    color: #23ade5;
+    line-height: 1.5;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+}
+.fixed-list>a>div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.fixed-list>a>div>img{
+    position: absolute;
+    top: 0px;
+    left: 11px;
+}
+.fixed-list>a>p{
+    margin-top: 15px;
+    margin-left: 2px;
+}
+.fixed-list>a>div:hover{
+    animation-name: img-jump;
+    animation-duration:1.5s;
+    animation-iteration-count :infinite
+}
+/* 图标向上跳 */
+@keyframes img-jump {
+    0% {
+        top: 0px;
+    }
+    20%{
+        top: 0px;
+        transform: scale(.8)
+    }
+    35%{
+        top: -20px;
+        transform: scale(.8)
+    }
+    45%{
+        top: 0px;
+        transform: scale(.8)
+    }
+    50%{
+        transform: scale(1)
+    }
+    55%{
+        transform: scale(.8)
+    }
+    60%{
+        transform: scale(1)
+    }
+}

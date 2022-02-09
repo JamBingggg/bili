@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bilibili游戏中心 - 只做有节操的游戏</title>
+    <!-- 标签栏图标 -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/game-head.css">
+    <link rel="stylesheet" href="css/game-page.css">
+    <link rel="stylesheet" href="css/game-foot.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <!-- 导航条 -->
+        <div class="nav-menu">
+            <!-- 阴影 -->
+            <div class="nav-mask"></div>
+            <div class="person nav">
+                <!-- 左侧导航 -->
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a class="t" style="padding-left: 20px;" href="#"><i
+                                class="header-iconfont header-icon-bilibili-tv"></i>
+                            主站</a>
+                        <div class="t-frame" style="visibility: hidden">
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">游戏中心</a>
+                        <!-- 弹出框 -->
+                        <div class="t-frame" style="visibility: hidden" onmouseout="fou(this)">
+                            <div class="frame-left">
+                                <div class="ban">
+                                    <img src="img/frameban.jpg" style="border-radius: 4px;" alt="">
+                                    <span>命运-冠位指定（Fate/GO）</span>
+                                </div>
+                                <div class="bie">
+                                    <div class="bie1">
+                                        <img src="img/bie1.png" style=" width: 64px;height: 64px;border-radius: 12px;"
+                                            alt="">
+                                        <span>魂器学院</span>
+                                    </div>
+                                    <div class="bie1">
+                                        <img src="img/bie2.png" style=" width: 64px;height: 64px;border-radius: 12px;"
+                                            alt="">
+                                        <span>重装战姬</span>
+                                    </div>
+                                    <div class="bie1">
+                                        <img src="img/bie3.png" style=" width: 64px;height: 64px;border-radius: 12px;"
+                                            alt="">
+                                        <span>碧蓝航线</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="frame-right">
+                                <ul id="right-ul">
+                                    <li class="right-li">代号：灵</li>
+                                    <li class="right-li">哈利波特：魔法觉醒</li>
+                                    <li class="right-li">双生视界</li>
+                                    <li class="right-li">A3!满开剧团</li>
+                                    <li class="right-li">幻想神姬</li>
+                                    <li class="right-li">公主连结Re:Drive</li>
+                                    <li class="right-li">Dead Cells</li>
+                                </ul>
+                            </div>
+                            <img id="right-img" style="display: none" src="" alt="">
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">直播</a>
+                        <div class="t-frame" style="visibility: hidden;width: 528px;height: 66px;"
+                            onmouseout="fou(this)">
+                            <div class="zhibo-left" style="float: left;width: 254px;">热门直播：</div>
+                            <div class="zhibo-right" style="float: left;width: 229px;">热门活动：</div>
+
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">会员购</a>
+                        <div class="t-frame" style="visibility: hidden;display: none"></div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">漫画</a>
+                        <!-- 弹出框 -->
+                        <div class="t-frame" style="visibility: hidden" onmouseout="fou(this)">
+                            <div class="manhua">
+                                <div class="manhua-left">
+                                    <div class="manhua-main">
+                                        <div class="mh-main">
+                                            <div class="manhua-img" style='background-image: url("img/manhua1.jpg");'>
+                                            </div>
+                                            <div class="manhua-zi">石之海（乔乔的奇妙冒险第6部）</div>
+                                        </div>
+                                    </div>
+                                    <div class="manhua-main">
+                                        <div class="mh-main">
+                                            <div class="manhua-img" style='background-image: url("img/manhua2.png");'>
+                                            </div>
+                                            <div class="manhua-zi">鬼灭之刃</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="manhua-main">
+                                        <div class="mh-main">
+                                            <div class="manhua-img" style='background-image: url("img/manhua3.png");'>
+                                            </div>
+                                            <div class="manhua-zi">石纪元（Dr.Stone）</div>
+                                        </div>
+                                    </div>
+                                    <div class="manhua-main">
+                                        <div class="mh-main">
+                                            <div class="manhua-img" style='background-image: url("img/manhua4.jpg");'>
+                                            </div>
+                                            <div class="manhua-zi">一拳超人</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 1px;background-color: rgba(0,0,0,.1);height:100%;float: left;"></div>
+                                <div class="frame-right manhua-right">
+                                    <div class="r-title">人气漫画</div>
+                                    <ul id="right-ul" class="manhua-ul" style="background:none">
+                                        <li class="right-li manhua-li"><span>1</span>
+                                            <div class="mh-font">鬼灭之刃</div>
+                                        </li>
+                                        <li class="right-li manhua-li"><span>2</span>
+                                            <div class="mh-font">BEASTARS 动物狂想曲</div>
+                                        </li>
+                                        <li class="right-li manhua-li"><span>3</span>
+                                            <div class="mh-font">入间同学入魔了！</div>
+                                        </li>
+                                        <li class="right-li manhua-li"><span>4</span>
+                                            <div class="mh-font">天官赐福</div>
+                                        </li>
+                                        <li class="right-li manhua-li"><span>5</span>
+                                            <div class="mh-font">石纪元（Dr.Stone）</div>
+                                        </li>
+                                        <li class="right-li manhua-li"><span>6</span>
+                                            <div class="mh-font">我的英雄学园</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img id="manhua-img" style="display: none" src="" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">赛事</a>
+                        <div class="t-frame" style="visibility: hidden;display: none">
+
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">BWL</a>
+                        <!-- 弹出框 -->
+                        <div class="t-frame" style="visibility: hidden;width: 399px;padding: 12px"
+                            onmouseout="fou(this)">
+                            <div class="bml">
+                                <img src="img/bml1.jpg" alt="">
+                                <span>BML广州</span>
+                            </div>
+                            <div class="bml" style="margin-top: 10px;">
+                                <img src="img/bml2.jpg" alt="">
+                                <span>BilibiliWorld成都</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#">70年</a>
+                        <div class="t-frame" style="visibility: hidden;display: none">
+
+                        </div>
+                    </li>
+                    <li class="nav-li" onmousemove="om(this)" onmouseout="aou(this)">
+                        <a class="t" href="#" style="float: left"><i
+                                class="header-iconfont header-icon-Navbar_mobile app"></i>
+                            下载APP</a>
+                        <!-- 弹出框 -->
+                        <div class="t-frame appdownload" style="visibility: hidden" onmouseout="fou(this)">
+                            <div class="erweima"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 输入框 -->
+                <div class="nav-search">
+                    <div class="search">
+                        <div class="si">
+                            <input class="search-input" placeholder="今天我是玛琳菲森本人" type="text">
+                            <i class="header-iconfont header-icon-general_search nav-search-submit se"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧 -->
+                <div class="nav-right">
+                    <div class="person">
+                        <div class="p-ul">
+                            <div class="nav-li p-li" style="width: 46px;" onmousemove="om(this)" onmouseout="aou(this)">
+                                <a href="#" class="t">
+                                    <div class="t p-face">
+                                        <img class="face" src="img/akari.jpg" alt="">
+                                    </div>
+                                </a>
+                                <!-- 弹出框 -->
+                                <div class="t-frame i-frame" style="visibility: hidden;width: 346px;height: 333px;"
+                                    onmouseout="fou(this)">
+                                    <p class="i-title">登录后你可以：</p>
+                                    <div class="p-img">
+                                        <ul>
+                                            <li style="background: url(img/danmu.png)"></li>
+                                            <li style="background: url(img/danmu.png)"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="login">登陆</p>
+                                    <p class="res">首次使用？<a href="#">点我去注册</a></p>
+                                </div>
+                            </div>
+                            <div class="p-li">
+                                <a href="#" class="t">动态</a>
+
+                            </div>
+                            <div class="p-li">
+                                <a href="#" class="t">历史</a>
+
+                            </div>
+                            <div class="p-li">
+                                <a href="#" class="t">创作中心</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person"></div>
+                    <div class="p-ul">
+                        <div class="nav-li load" onmousemove="om(this)" onmouseout="aou(this)">
+                            <a href="#" class="tougao">投稿</a>
+                            <!-- 弹出框 -->
+                            <ul class="t-frame tg-frame" style="visibility: hidden;width: 272px;height: 64px;"
+                                onmouseout="fou(this)">
+                                <li class="tg-ul">
+                                    <div>
+                                        <i class="bili-icon rect i-art"></i>
+                                        <p>专栏投稿</p>
+                                    </div>
+                                </li>
+                                <li class="tg-ul">
+                                    <div>
+                                        <i class="bili-icon rect i-ap"></i>
+                                        <p>音频投稿</p>
+                                    </div>
+                                </li>
+                                <li class="tg-ul">
+                                    <div>
+                                        <i class="bili-icon rect i-vp"></i>
+                                        <p>视频投稿</p>
+                                    </div>
+                                </li>
+                                <li class="tg-ul">
+                                    <div>
+                                        <i class="bili-icon rect i-vm"></i>
+                                        <p>投稿管理</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 大轮播图 -->
+        <div class="banner">
+            <div class="show" id="show">
+                <!-- 图片 -->
+                <!-- 按钮组 -->
+                <a href="#" class="ba-next" id="next" data-btn="next">Next</a>
+                <a href="#" class="ba-prev" id="prev" data-btn="previous">Previous</a>
+            </div>
+            <!-- 主菜单列表 -->
+            <div class="main-menu">
+                <ul class="menu-ul" id="menu-ul">
+                    <li class="menu-li" style="background: url(img/mainmenu-a.jpg) left top no-repeat / 100% auto;">
+                        <span class="menu-a yxzx" href="#">游戏中心</span>
+                    </li>
+                    <li class="menu-li">
+                        <span class="menu-a yxlb" href="#">游戏列表</span>
+                    </li>
+                    <li class="menu-li">
+                        <span class="menu-a lbzx" href="#">礼包中心</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainly">
+            <!-- 小轮播图 -->
+            <div class="banner-box">
+                <div class="mainly-banner">
+                    <div class="banner-show" id="banner-show">
+
+                        <!-- 按钮组 -->
+
+                    </div>
+                    <!-- 轮播图右侧文字 -->
+                    <div class="banner-text" id="banner-text"></div>
+
+                    <div class="banner-tow"></div>
+                </div>
+            </div>
+            <!-- 游戏列表 -->
+            <div class="game-list" style="height: 892px; padding-bottom: 70px;">
+                <div class="game-all">
+                    <div class="list1">
+                        <h4>
+                            <span>&nbsp;</span>
+                            手机游戏
+                        </h4>
+                        <!-- 新游预约 -->
+                        <ul class="l1" id="l1">
+                        </ul>
+                    </div>
+                    <div class="list2">
+                        <h4>
+                            <span>&nbsp;</span>
+                        </h4>
+                        <!-- 热门游戏 -->
+                        <ul class="l1 l2" id="l2">
+                        </ul>
+                    </div>
+                    <div class="list3">
+                        <h4>
+                            <span>&nbsp;</span>
+                        </h4>
+                        <!-- 独立游戏 -->
+                        <ul class="l1" id="l3">
+                        </ul>
+                    </div>
+                    <div class="game-other">
+                        <div class="client-game">
+                            <h4>
+                                <span>&nbsp;</span>
+                                客户端游戏
+                            </h4>
+                            <ul class="l1" id="l4">
+                            </ul>
+                        </div>
+                        <div class="web-game">
+                            <h4>
+                                <span>&nbsp;</span>
+                                网页游戏
+                            </h4>
+                            <ul class="l1">
+                                <li><a href="#">晓之轨迹（页游）</li>
+                                <li><a href="#">刀剑乱舞</a></li>
+                                <li><a href="#">像素骑士团</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-right">
+                        <a class="game-more" href="#">
+                            <strong>查看图片完整版</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 通告 -->
+            <div class="game-list">
+                <div class="notice">
+                    <ul>
+                        <li style="margin-left: -2px"><a href="#">自律公约</a></li>
+                        <li><a href="#">B站动态</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">客服娘</a></li>
+                        <li><a href="#">招聘启事</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer-public">
+            <div class="footer-box">
+                <div class="logos">
+                    <div class="logo1"></div>
+                    <div class="logo2"></div>
+                </div>
+                <div class="footer-text">
+                    <p>
+                        <a href="#">游戏中心</a> 　|　
+                        <a href="#">帐号安全</a> 　|　
+                        <a href="#">找回密码</a> 　|　
+                        <a href="#">家长监控</a> 　|　
+                        <a href="#">用户协议</a> 　|　
+                        <a href="#">隐私政策</a>
+                    </p>
+                    <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+                    <p>上海宽娱数码科技有限公司 | COPYRIGHT © 2009-2019 BILIBILI ALL RIGHTS RESERVED.</p>
+                    <p>互联网ICP备案：沪ICP备13002172号-3 沪ICP证：沪B2-20100043 | 沪网文[2016]2296-134号</p>
+                    <p>
+                        <img src="img/record-logo.png" style="vertical-align: top;width: 20px;height: 20px;" alt="">
+                        沪公网安备 31011002002436 号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧绝对定位列 -->
+    <div class="fixed-list">
+        <a href="#" name="fixed-btn">
+            <div><img src="img/wechat.png" alt=""></div> <br>
+            <p>微信</p>
+        </a>
+        <a href="#" name="fixed-btn">
+            <div><img src="img/weibo.png" alt=""></div><br>
+            <p>微博</p>
+        </a>
+        <a href="#" name="fixed-btn">
+            <div><img src="img/bili.png" alt=""></div><br>
+            <p>B站动态</p>
+        </a>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.pietimer.min.js"></script>
+    <script src="js/json.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/game.js"></script>
+    <script>
+        var show = new banner("#show");
+        show.setData();
+        var banner_show = new banner1("#banner-show");
+        banner_show.setData();
+        var banner_text = new banner2("#banner-text");
+        banner_text.setData();
+        var glist1 = new gamelist1("#l1");
+        glist1.setData();
+        var glist2 = new gamelist2("#l2");
+        glist2.setData();
+        var glist3 = new gamelist3("#l3");
+        glist3.setData();
+        var glist4 = new gamelist4("#l4");
+        glist4.setData();
+    </script>
+</body>
+
+</html>
